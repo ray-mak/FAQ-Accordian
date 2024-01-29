@@ -2,11 +2,6 @@
     box-sizing: border-box;
 }
 
-@media (max-width: 375px) {
-    #cover-photo {
-        content: url(images/background-pattern-mobile.svg)
-    }
-}
 
 body {
     width: 100vw;
@@ -94,7 +89,7 @@ main {
 
 
 .questions-container .question-box.active .answer {
-    max-height: 120px;
+    max-height: 80px;
     transition: max-height .5s ease-in-out;
 }
 
@@ -102,3 +97,20 @@ main {
     content: url(images/icon-minus.svg);
     display: flex;
 }
+
+@media screen and (max-width: 1000px) {
+    #faq-container {
+        position: fixed;
+        width: 450px;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #faq-container {
+    position: fixed;
+     width: 375px;
+     margin-top: 80px;
+    };
+
+ }
